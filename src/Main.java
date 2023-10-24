@@ -196,7 +196,6 @@ class task3 {
             } else {
                 System.out.println("Гарного дня!");
             }
-
         }
     }
 
