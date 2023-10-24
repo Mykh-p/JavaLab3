@@ -194,6 +194,7 @@ class task3 {
                 System.out.println("15. До якого результату призведе виконання наступного фрагменту коду (true/false)?");
                 System.out.println("- False. Щоб отримати True, треба замінити 1/i на 1.0/i");
             } else {
+
                 System.out.println("Гарного дня!");
             }
         }
