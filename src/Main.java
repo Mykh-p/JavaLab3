@@ -47,6 +47,11 @@ public class Main {
                 case 2 :
                     System.out.println("bye");
                     break;
+                default:
+                    do {
+                        System.out.println("Спробуйте ще раз");
+                        i = scanner.nextInt();
+                    }while(i==3);
             }
         }while (i==1);
     }
@@ -128,10 +133,10 @@ class task3 {
         int i = 0;
 
         do {
-            term = Math.pow(-2, i) / (factorial(i) * (i + 1.0));
+            term = pow(-2, i) / (factorial(i) * (i + 1.0));
             sum += term;
             i++;
-        } while (Math.abs(term) >= epsilon);
+        } while (abs(term) >= epsilon);
         return sum;
     }
 
@@ -147,7 +152,7 @@ class task3 {
         public static void answers() {
             Scanner in = new Scanner(System.in);
             System.out.println("Чи хочете ви побачити відповіді на питання? 1-так , 2-ні");
-            double x = in.nextDouble();
+            int x = in.nextInt();
             if (x == 1) {
 
                 System.out.println("1.Що таке структурне програмування?");
